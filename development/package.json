@@ -1,0 +1,7 @@
+{
+  "name": "development",
+  "private": true,
+  "scripts": {
+    "cli": "node ../packages/cli/lib/cli.js"
+  }
+}

@@ -1,7 +1,6 @@
 'use strict';
+const {execSync} = require('child_process');
 
-module.exports = cli;
+const result = execSync('ls -a');
 
-function cli() {
-    // TODO
-}
+console.log(`${result}`);
