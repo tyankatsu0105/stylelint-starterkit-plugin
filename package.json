@@ -1,0 +1,22 @@
+{
+  "name": "stylelint-plugin-starter",
+  "version": "1.0.0",
+  "description": "[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/stylelint-plugin-starter.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/stylelint-plugin-starter/issues"
+  },
+  "homepage": "https://github.com/tyankatsu0105/stylelint-plugin-starter#readme",
+  "devDependencies": {
+    "lerna": "^3.18.1"
+  }
+}
