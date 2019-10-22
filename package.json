@@ -1,5 +1,5 @@
 {
-  "name": "@tyankatsu0105/stylelint-plugin-starter",
+  "name": "stylelint-plugin-starter",
   "version": "0.0.0",
   "private": true,
   "description": "Plugin starter for Stylelint",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "author": "tyankatsu0105",
   "workspaces": [
-    "packages/*"
+    "packages/@stylelint-plugin-starter/*"
   ],
   "scripts": {
     "precommit": "lint-staged",
@@ -45,8 +45,5 @@
     "lerna": "^3.18.1",
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

@@ -8,22 +8,21 @@
   "main": "bin/index.js",
   "directories": {
     "lib": "lib",
-    "test": "__tests__"
+    "bin": "bin"
   },
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tyankatsu0105/stylelint-plugin-starter.git"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/tyankatsu0105/stylelint-plugin-starter/issues"
   },
   "dependencies": {
+    "chalk": "^2.4.2",
     "enquirer": "^2.3.2",
     "listr": "^0.14.3"
   }
