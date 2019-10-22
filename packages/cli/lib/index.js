@@ -1,6 +1,6 @@
-'use strict';
-const { execSync } = require('child_process');
+const prompt = require('./prompt');
 
-const result = execSync('ls -a');
-
-console.log(`${result}`);
+(async () => {
+  const { response } = await prompt();
+  console.log(response);
+})();

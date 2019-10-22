@@ -1,7 +1,8 @@
 {
-  "name": "stylelint-plugin-starter",
+  "name": "@tyankatsu0105/stylelint-plugin-starter",
   "version": "0.0.0",
-  "description": "[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)",
+  "private": true,
+  "description": "Plugin starter for Stylelint",
   "homepage": "https://github.com/tyankatsu0105/stylelint-plugin-starter#readme",
   "bugs": {
     "url": "https://github.com/tyankatsu0105/stylelint-plugin-starter/issues"
@@ -11,8 +12,10 @@
     "url": "git+https://github.com/tyankatsu0105/stylelint-plugin-starter.git"
   },
   "license": "MIT",
-  "author": "",
-  "main": "index.js",
+  "author": "tyankatsu0105",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "precommit": "lint-staged",
     "commit": "git-cz"
