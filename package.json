@@ -1,20 +1,20 @@
 {
-  "name": "stylelint-plugin-starter",
+  "name": "stylelint-starterkit-plugin",
   "version": "0.0.0",
   "private": true,
   "description": "Plugin starter for Stylelint",
-  "homepage": "https://github.com/tyankatsu0105/stylelint-plugin-starter#readme",
+  "homepage": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin#readme",
   "bugs": {
-    "url": "https://github.com/tyankatsu0105/stylelint-plugin-starter/issues"
+    "url": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tyankatsu0105/stylelint-plugin-starter.git"
+    "url": "git+https://github.com/tyankatsu0105/stylelint-starterkit-plugin.git"
   },
   "license": "MIT",
   "author": "tyankatsu0105",
   "workspaces": [
-    "packages/@stylelint-plugin-starter/*"
+    "packages/@stylelint-starterkit-plugin/*"
   ],
   "scripts": {
     "precommit": "lint-staged",

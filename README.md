@@ -1,8 +1,8 @@
-# 🏁Stylelint plugin starter
+# 🏁Stylelint starterkit plugin
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-Plugin starter for [Stylelint](https://stylelint.io/).
+Plugin starter kit for [Stylelint](https://stylelint.io/).
 
 ## Features
 
