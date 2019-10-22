@@ -20,14 +20,25 @@ const updatePackageJson = async (packagePath, obj) => {
   await fs.outputFile(packagePath, JSON.stringify(newPkg, null, 2));
 };
 
+const updateFile = async (filePath, regex, content, replacer) => {
+  const oldContent = await fs.readFile(filePath, 'utf-8');
+  const newContent = String(oldContent).replace(regex, replacer);
+
+  await fs.outputFile(filePath, newContent);
+};
+
 module.exports = async (response) => {
   const { name } = response;
-  const dir = absolutePath(name);
+  const target = {
+    packageJson: `${absolutePath(name)}/package.json`,
+    readme: `${absolutePath(name)}/README.md`
+  };
 
   await makeProjectDir(name);
   await copyDirectory(name);
 
-  await updatePackageJson(`${dir}/package.json`, {
+  await updatePackageJson(target.packageJson, {
     name
   });
+  await updateFile(target.readme, /#\s.*/, name, `# ${name}`);
 };
