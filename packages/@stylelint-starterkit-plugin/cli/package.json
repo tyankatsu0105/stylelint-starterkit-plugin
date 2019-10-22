@@ -10,10 +10,12 @@
   },
   "directories": {
     "lib": "lib",
+    "utils": "utils",
     "bin": "bin"
   },
   "files": [
     "lib",
+    "utils",
     "bin"
   ],
   "repository": {

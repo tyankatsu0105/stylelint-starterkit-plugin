@@ -1,14 +1,13 @@
 'use strict';
 
 const fs = require('fs-extra');
-const path = require('path');
+
+const { TEMPLATE_PATH } = require('../utils/const');
 
 const makeProjectDir = (name) => fs.mkdirs(name);
 
 const makeFiles = (name) => {
-  const templatePath = path.join(__dirname, '../../', 'template', 'src');
-
-  fs.copy(templatePath, name);
+  fs.copy(TEMPLATE_PATH, name);
 };
 
 module.exports = async (response) => {
