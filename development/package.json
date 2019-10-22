@@ -2,6 +2,6 @@
   "name": "development",
   "private": true,
   "scripts": {
-    "cli": "node ../packages/@stylelint-starterkit-plugin/cli/bin"
+    "stylelint-starterkit-plugin": "node ../node_modules/.bin/stylelint-starterkit-plugin"
   }
 }
