@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs-extra');
+const { exec } = require('child_process');
 
 const { TEMPLATE_PATH } = require('../utils/const');
 const absolutePath = require('../utils/absolutePath');
@@ -20,7 +21,7 @@ const updatePackageJson = async (packagePath, obj) => {
   await fs.outputFile(packagePath, JSON.stringify(newPkg, null, 2));
 };
 
-const updateFile = async (filePath, regex, content, replacer) => {
+const updateFile = async (filePath, regex, replacer) => {
   const oldContent = await fs.readFile(filePath, 'utf-8');
   const newContent = String(oldContent).replace(regex, replacer);
 
@@ -28,8 +29,8 @@ const updateFile = async (filePath, regex, content, replacer) => {
 };
 
 module.exports = async (response) => {
-  const { name } = response;
-  const target = {
+  const { name, packageManager } = response;
+  const updateTarget = {
     packageJson: `${absolutePath(name)}/package.json`,
     readme: `${absolutePath(name)}/README.md`
   };
@@ -37,8 +38,16 @@ module.exports = async (response) => {
   await makeProjectDir(name);
   await copyDirectory(name);
 
-  await updatePackageJson(target.packageJson, {
+  await updatePackageJson(updateTarget.packageJson, {
     name
   });
-  await updateFile(target.readme, /#\s.*/, name, `# ${name}`);
+  await updateFile(
+    updateTarget.readme,
+    /__generated-template-readme-title__/,
+    name
+  );
+
+  exec(`${packageManager} install`, {
+    cwd: absolutePath(name)
+  });
 };
