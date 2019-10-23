@@ -1,6 +1,5 @@
 {
   "name": "stylelint-starterkit-plugin",
-  "version": "0.0.0",
   "private": true,
   "description": "Plugin starter for Stylelint",
   "homepage": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin#readme",
