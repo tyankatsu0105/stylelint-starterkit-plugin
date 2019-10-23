@@ -1,29 +1,29 @@
 {
   "name": "@stylelint-starterkit-plugin/cli",
   "version": "1.0.1",
-  "author": "tyankatsu0105 <frips.ryilsufupe+dev@gmail.com>",
   "homepage": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/tree/master/packages/cli#readme",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/stylelint-starterkit-plugin.git"
+  },
   "license": "MIT",
+  "author": "tyankatsu0105 <frips.ryilsufupe+dev@gmail.com>",
+  "files": [
+    "lib",
+    "utils",
+    "bin"
+  ],
   "main": "bin/index.js",
   "bin": {
     "stylelint-starterkit-plugin": "./bin/index.js"
   },
   "directories": {
     "lib": "lib",
-    "utils": "utils",
-    "bin": "bin"
-  },
-  "files": [
-    "lib",
-    "utils",
-    "bin"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tyankatsu0105/stylelint-starterkit-plugin.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/issues"
+    "bin": "bin",
+    "utils": "utils"
   },
   "dependencies": {
     "chalk": "^2.4.2",

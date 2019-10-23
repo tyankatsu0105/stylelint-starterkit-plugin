@@ -1,21 +1,21 @@
 {
   "name": "@stylelint-starterkit-plugin/template",
   "version": "1.0.1",
-  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
   "homepage": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/tree/master/packages/template#readme",
-  "license": "MIT",
-  "directories": {
-    "src": "src"
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/issues"
   },
-  "files": [
-    "src"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tyankatsu0105/stylelint-starterkit-plugin.git"
   },
-  "bugs": {
-    "url": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/issues"
+  "license": "MIT",
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
+  "files": [
+    "src"
+  ],
+  "directories": {
+    "src": "src"
   },
   "publishConfig": {
     "access": "public"
