@@ -4,20 +4,19 @@
 
 Plugin starter kit for [Stylelint](https://stylelint.io/).
 
-## Features
+## Usage
 
-- [x] CLI
-  - Hearing these info
-    - [x] plugin name
-    - [x] author
-    - [x] yarn or npm
-    - [x] scoped plugin
-  - Update file with the above info
-    - [x] package.json
-    - [x] README.md
-    - [x] yarn.lock or package-lock.json
-- [x] test
-- [x] rules
+```bash
+$ npm install @stylelint-starterkit-plugin/cli @stylelint-starterkit-plugin/template -D
+$ npx stylelint-starterkit-plugin
+```
+
+or
+
+```bash
+$ yarn add @stylelint-starterkit-plugin/cli @stylelint-starterkit-plugin/template -D
+$ yarn stylelint-starterkit-plugin
+```
 
 ## License
 
