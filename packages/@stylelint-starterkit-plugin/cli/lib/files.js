@@ -1,7 +1,6 @@
 'use strict';
 
 const fs = require('fs-extra');
-const { exec } = require('child_process');
 
 const { TEMPLATE_PATH } = require('../utils/const');
 const absolutePath = require('../utils/absolutePath');
@@ -29,7 +28,7 @@ const updateFile = async (filePath, regex, replacer) => {
 };
 
 module.exports = async (response) => {
-  const { name, packageManager } = response;
+  const { name } = response;
   const updateTarget = {
     packageJson: `${absolutePath(name)}/package.json`,
     readme: `${absolutePath(name)}/README.md`
@@ -46,8 +45,4 @@ module.exports = async (response) => {
     /__generated-template-readme-title__/,
     name
   );
-
-  exec(`${packageManager} install`, {
-    cwd: absolutePath(name)
-  });
 };
