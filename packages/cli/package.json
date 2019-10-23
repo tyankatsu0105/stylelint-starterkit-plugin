@@ -31,5 +31,8 @@
     "execa": "^3.2.0",
     "fs-extra": "^8.1.0",
     "listr": "^0.14.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

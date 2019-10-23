@@ -10,14 +10,14 @@
   "files": [
     "src"
   ],
-  "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tyankatsu0105/stylelint-starterkit-plugin.git"
   },
   "bugs": {
     "url": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
