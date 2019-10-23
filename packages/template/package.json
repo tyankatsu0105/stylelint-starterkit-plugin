@@ -1,6 +1,6 @@
 {
   "name": "@stylelint-starterkit-plugin/template",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
   "homepage": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/tree/master/packages/template#readme",
   "license": "MIT",

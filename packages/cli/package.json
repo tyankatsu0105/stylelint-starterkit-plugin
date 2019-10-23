@@ -1,6 +1,6 @@
 {
   "name": "@stylelint-starterkit-plugin/cli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "tyankatsu0105 <frips.ryilsufupe+dev@gmail.com>",
   "homepage": "https://github.com/tyankatsu0105/stylelint-starterkit-plugin/tree/master/packages/cli#readme",
   "license": "MIT",
