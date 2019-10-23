@@ -14,7 +14,7 @@
   "license": "MIT",
   "author": "tyankatsu0105",
   "workspaces": [
-    "packages/@stylelint-starterkit-plugin/*"
+    "packages/*"
   ],
   "scripts": {
     "precommit": "lint-staged",
