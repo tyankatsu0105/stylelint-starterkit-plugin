@@ -2,7 +2,7 @@
 
 <h2 align="center">stylelint-starterkit-plugin</h2>
 <p align="center">
-  This is ESlint plugin for <a href="https://stylelint.io/" rel="nofollow">Stylelint</a>.
+  Plugin starter kit for <a href="https://stylelint.io/" rel="nofollow">Stylelint</a>.
 </p>
 <p align="center">
   <a title="code style: prettier" href="https://github.com/prettier/prettier" rel="nofollow">
