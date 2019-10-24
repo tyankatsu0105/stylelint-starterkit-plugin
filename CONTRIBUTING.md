@@ -5,7 +5,9 @@
 ```bash
 $ cd ./packages/cli
 $ yarn link
-$ cd ../../../development
+$ cd ../../
+$ cd yarn install
+$ cd ./development
 $ yarn stylelint-starterkit-plugin
 ```
 
